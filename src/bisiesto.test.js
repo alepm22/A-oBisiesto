@@ -1,7 +1,12 @@
 import bisiesto from "./bisiesto.js";
 
-describe("El anio 2000 es un anio bisiesto", () => {
-    it("Es un anio bisiesto", () => {
+describe("bisiesto", () => {
+
+    it("Debería ser un año bisiesto", () => {
       expect(bisiesto(2000)).toEqual("True");
     });
-  });
+
+    it("No debería ser un año bisiesto", () => {
+      expect(bisiesto(2001)).toEqual("False");
+    });
+});
