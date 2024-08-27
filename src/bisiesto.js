@@ -1,11 +1,15 @@
-function bisiesto(n) {
-  let respuesta;
-  if (n%400===0){
-      respuesta="True";
+function bisiesto(año) {
+  if (año%400===0)
+  {
+    return "True";
+
+  }else if(año%100===0)
+  {
+    return "False";
   }
   else{
-      respuesta="False";
+    return "False";
   }
-  return respuesta;
-}
-export default bisiesto;
+  }
+ 
+  export default bisiesto;
